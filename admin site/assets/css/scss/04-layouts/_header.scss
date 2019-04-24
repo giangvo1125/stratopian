@@ -1,0 +1,196 @@
+.header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    // background-color: $header-bg;
+    background-image: linear-gradient(90deg,#23b7e5 0,#51c6ea);
+    color: $header-color;
+    // box-shadow: 0 2px 4px #eee;
+    &__content {
+        display: flex;
+        align-items: center;
+        height: $header-height;
+        .brand {
+            margin-left: 10px;
+            width: $sidebar-width;
+            a {}
+            img {
+                height: $header-height - 10px;
+            }
+        }
+        .title {
+            flex: 1;
+            a.toggle {
+                font-size: 20px;
+                transition: .3s;
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .actions {
+            display: flex;
+            .noti {
+                height: $header-height;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                position: relative;
+                .noti__display {
+                    a {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 20px;
+                        i.number {
+                            position: absolute;
+                            top: -5px;
+                            right: -5px;
+                            padding: 3px 5px;
+                            background-color: $warning;
+                            color: white;
+                            font-size: 10px;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .noti__container {
+                    z-index: 2;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    display: none;
+                    .noti__content {
+                        background-color: white;
+                        color: rgba(black,.5);
+                        box-shadow: 1px 1px 4px rgba(gray,.5);
+                        ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            
+                            li {
+                                display: block;
+                                padding: 0 10px;
+                                border-bottom: 1px solid rgba(gray,.1);
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                    display: flex;
+                                    padding: 10px 0; 
+                                    i {
+                                        margin-right: 10px;
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        max-width: 250px;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+                                }
+                                &:hover:not(.viewall):not(.count):not(.active) {
+                                    cursor: pointer;
+                                    color: black;
+                                }
+                                &.active {
+                                    color: $info;
+                                }
+                                &.count {
+                                    font-style: italic;
+                                }
+                                &.viewall {
+                                    a {
+                                        justify-content: center;
+                                        color: $info;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: rgba(gray,.1);
+                }
+                &.active {
+                    .noti__container {
+                        display: block;
+                    }
+                }
+            }
+            .account {
+                height: $header-height;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding: 0 10px;
+                .account__display {
+                    .avatar {
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: 2px solid white;
+                            vertical-align: middle;
+                        }
+                        .name {
+                        }
+                    }
+                }
+                .account__container {
+                    z-index: 2;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    display: none;
+                    .account__content {
+                        background-color: white;
+                        color: rgba(black,.5);
+                        box-shadow: 1px 1px 4px rgba(gray,.5);
+                        padding: 0px 0px;
+                        min-width: 150px;
+                        ul {
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                            li {
+                                padding: 10px 0;
+                                a {
+                                    color: inherit;
+                                    text-decoration: none;
+                                    padding: 0 30px;
+                                }
+                                &:hover:not(.active) {
+                                    cursor: pointer;
+                                    color: black;
+                                }
+                                &.active {
+                                    color: $primary;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgba(gray,.1);
+                }
+            }
+            .account.active {
+                .account__display {
+                    .avatar {
+                    }
+                }
+                .account__container {
+                    display: block;
+                }
+            }
+        }
+    }
+}
