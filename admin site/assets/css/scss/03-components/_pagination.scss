@@ -1,0 +1,39 @@
+.pagination {
+	box-shadow: 1px 1px 4px rgba(gray,.1);
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		li {
+			padding: 10px;
+			border: 1px solid #f4f4f4;
+			border-right-color: transparent;
+			background-color: white;
+			color: rgba(black,.5);
+			transition: border .3s;
+			&:last-child {
+				border-right-color: #f4f4f4;
+			}
+			a {
+
+			}
+			&:hover:not(.active):not(.disabled) {
+				cursor: pointer;
+				border-color: black;
+				color: black;
+			}
+			&.active {
+				border-color: $form-focus;
+				color: $form-focus;
+			}
+			&.disable {
+				opacity: .5;
+				cursor: not-allowed;
+				a {
+					pointer-events: none;
+				}
+			}
+		}
+	}
+}

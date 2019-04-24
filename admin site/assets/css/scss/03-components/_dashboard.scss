@@ -1,0 +1,65 @@
+.dashboard {
+	background-color: #eee;
+	color: #555;
+	position: relative;
+	overflow: hidden;
+
+	.dashboard__content {
+		padding: 20px;
+		.name {
+			opacity: .6;
+			display: block;
+			font-size: 2em;
+			font-weight: 600;
+		}
+		.subname {
+			opacity: .6;
+			margin-top: 5px;
+			display: block;
+		}
+	}
+	.dashboard__icon {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 6em;
+		opacity: .1;
+	}
+	.dashboard__action {
+		padding: 5px 0;
+		display: block;
+		text-align: center;
+		background-color: rgba(gray,.1);
+		&:hover {
+			cursor: pointer;
+			text-decoration: none;
+			background-color: rgba(gray,.2);
+		}
+	}
+
+	&--primary {
+		background-color: $primary;
+		color: white;
+	}
+	&--info {
+		background-color: $info;
+		color: white;
+	}
+	&--warning {
+		background-color: $warning;
+		color: white;
+	}
+	&--success {
+		background-color: $success;
+		color: white;
+	}
+	&--danger {
+		background-color: $danger;
+		color: white;
+	}
+}
+.dashboards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+}

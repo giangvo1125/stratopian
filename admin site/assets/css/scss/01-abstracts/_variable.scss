@@ -1,0 +1,121 @@
+// ===================================================
+// COLORS
+// ===================================================
+$primary: 	#23b7e5;
+$secondary: #fff;
+$light: 	#f8f9fa;
+$dark: 		#3a3f51;
+$accent: 	#ff0040;
+$text: 		#222;
+
+$primary-gradient-1: #23b7e5;
+$primary-gradient-2: #51c6ea;
+
+$info: 		#17a2b8;
+$success: 	#27c24c;
+$warning: 	#ff902b;
+$danger: 	#f05050;
+
+
+$colors: (
+	'primary': 			$primary,
+	'accent': 			$accent,
+	'text': 			$text,
+	'info': 			$info,
+	'success': 			$success,
+	'warning': 			$warning,
+	'danger': 			$danger,
+
+	'secondary': 		$secondary,
+    'light': 			$light,
+    'dark': 			$dark,
+
+    
+);
+// ===================================================
+// BREAKPOINTS
+// ===================================================
+
+    // --breakpoint-xs: 0;
+    // --breakpoint-sm: 576px;
+    // --breakpoint-md: 768px;
+    // --breakpoint-lg: 992px;
+    // --breakpoint-xl: 1200px;
+
+// MOBILE
+$sm: 767px;
+// TABLET
+$md: 768px;
+// DESKTOP
+$lg: 1024px;
+
+$breakpoints: (
+	'sm': $sm,
+	'md': $md,
+	'lg': $lg
+);
+// ===================================================
+// COMMON
+// ===================================================
+$container: 1170px;
+// ===================================================
+// BODY
+// ===================================================
+$body-font-family: 'Montserrat', sans-serif;
+$body-font-size: 13px;
+$body-bg: #f7f7f7;
+$body-text: #5d5d5d;
+
+// ===================================================
+// HEADER
+// ===================================================
+$header-height: 60px;
+$header-bg: $primary;
+$header-color: white;
+$header-border: #ddd;
+$header-z-index: 2;
+
+// ===================================================
+// PAGE
+// ===================================================
+$page-border: #cfdbe2;
+
+$page-header-bg: #fafbfc;
+$page-header-color: #929292;
+$page-header-height: 40px;
+$page-header-border: #cfdbe2;
+
+// ===================================================
+// SIDEBAR
+// ===================================================
+$sidebar-bg: white;
+$sidebar-text: #767474;
+$sidebar-border: #f7f7f7;
+$sidebar-width: 230px;
+$sidebar-space: 40px;
+$sidebar-z-index: 3;
+// ===================================================
+// FORM
+// ===================================================
+$form-height: 30px;
+$form-bg: white;
+$form-border: #dde6e9;
+$form-focus: #66afe9;
+$form-placeholder: #b7bac9;
+$font-bg: transparent;
+// ===================================================
+// ICON
+// ===================================================
+$icon-font-family: themify;
+
+// ===================================================
+// Z-INDEX
+// ===================================================
+
+
+
+
+
+
+
+
