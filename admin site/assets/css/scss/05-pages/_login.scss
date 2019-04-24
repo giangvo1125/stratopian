@@ -1,0 +1,70 @@
+.login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(black,.5);
+    font-size: 1.1em;
+    .login__content {
+        width: 420px;
+        margin: 0% auto;
+        padding: 5% 0;
+        .title {
+            margin: 0;
+            font-size: 3em;
+        }
+        .desc {
+            margin: 15px 0 15px;
+            font-style: italic;
+            color: #aaa;
+        }
+        .control-label {
+            display: block;
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+        .form-control {
+            height: 50px;
+            font-size: 1.2em;
+        }
+        .input.input--icon {
+            .icon {
+                color: $form-placeholder;
+                font-size: 20px;
+                width: 50px;
+            }
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .btn.submit {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background-color: $form-border;
+            color: $form-placeholder;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            letter-spacing: 3px;
+            &.active {
+                background-color: $primary;
+                color: white;
+            }
+        }
+        .register-now {
+            margin-top: 15px;
+            text-align: center;
+            a {
+
+            }
+        }
+        .form-action {}
+        .login__header {
+        }
+        .login__body {
+            background-color: white;
+            padding: 30px 30px;
+        }
+        .login__footer {}
+    }
+}

@@ -62,10 +62,19 @@
     position: relative;
     .control-label {
     }
+    .help-block {
+        margin: 5px 0 0;
+        text-align: right;
+        color: #aaa;
+    }
     &:focus-within {
        .control-label {
        }
     }
+
+}
+.form-action {
+    
 }
 
 .fieldset {

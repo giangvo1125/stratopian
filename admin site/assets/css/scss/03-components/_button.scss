@@ -1,6 +1,7 @@
 %btn {
     display: inline-block;
     height: $form-height;
+    line-height: $form-height;
     text-align: center;
     padding: 0 10px;
     font-size: $body-font-size;
@@ -12,6 +13,10 @@
 }
 .btn {
     @extend %btn;
+}
+.btn--block {
+    width: 100%;
+    display: block;
 }
 .btn.btn-only-icon {
     width: $form-height;
