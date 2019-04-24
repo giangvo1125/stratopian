@@ -21,8 +21,13 @@
     margin: 0;
     font-weight: 500;
 }
-.margin-top-10 {
-    margin-top: 10px;
+
+.link {
+    color: $info;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 @for $i from 1 through 100 {

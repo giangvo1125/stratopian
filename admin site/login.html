@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="assets/plugins/themify-icons/themify-icons.css"/>
+	<link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="login">
+            <div class="login__content">
+                <div class="login__header">
+                </div>
+                <div class="login__body">
+                    <h1 class="title">LOGIN</h1>
+                    <p class="desc">Please enter username and password</p>
+                    <div class="form-group">
+                        <label class="control-label">Username</label>
+                        <div class="input input--icon">
+                            <input type="text" class="form-control" placeholder="JohnDoe@gmail.com"/>
+                            <i class="icon ti-user"></i>
+                        </div>
+                        <p class="help-block">required</p>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Password</label>
+                        <div class="input input--icon">
+                            <input type="password" class="form-control" placeholder="Enter your password"/>
+                            <i class="icon ti-key"></i>
+                        </div>
+                        <p class="help-block">required</p>
+                    </div>
+                    <p class="forgot-password"><a href="#" class="link">Forgot password ?</a></p>   
+                    <div class="form-action">
+                        <a class="btn submit active">login</a>
+                    </div>
+                    <p class="register-now">You haven't account. <a href="#" class="link">Register now</a> ?</p>
+                </div>
+                <div class="login__footer">
+                    
+                </div>
+            </div>
+        </div>
+	</div>
+	<script src="assets/js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".toggle").click(function(){
+				$(".page").toggleClass("close-aside");
+			});
+		});
+	</script>
+</body>
+</html>
