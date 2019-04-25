@@ -1,0 +1,4 @@
+@each $color in $colors {
+    .bg-#{$color} { background-color: $color; }
+    .text-#{$color} { color: $color; }
+}

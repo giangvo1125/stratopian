@@ -8,11 +8,37 @@
     white-space: nowrap;
     &:hover, &:focus {
         outline: none;
+        opacity: .8;
         cursor: pointer;
     }
 }
 .btn {
     @extend %btn;
+}
+.btn--primary {
+    background-color: $primary;
+    color: text-contract($primary);
+}
+.btn--success {
+    background-color: $success;
+    color: text-contract($success);
+}
+.btn--danger {
+    background-color: $danger;
+    color: text-contract($danger);
+}
+.btn--warning {
+    background-color: $warning;
+    color: text-contract($warning);
+}
+.btn--info {
+    background-color: $info;
+    color: text-contract($info);
+}
+.btn--sm {
+    font-size: 0.8em;
+    height: $form-height - 10px;
+    line-height: $form-height - 10px;
 }
 .btn--block {
     width: 100%;
