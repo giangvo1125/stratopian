@@ -1,0 +1,40 @@
+@mixin mixin-status($color: #ccc) {
+    border-color: $color;
+    color: $color;
+}
+.status {
+    font-size: .8em;
+    border: 1px solid $form-border;
+    color: $form-placeholder;
+    background-color: transparent;
+    padding: 2px 6px;
+
+    &--success {
+        @include mixin-status($success);
+    }
+    &--warning {
+        @include mixin-status($warning);
+    }
+    &--info {
+        @include mixin-status($info);
+    }
+    &--danger {
+        @include mixin-status($danger);
+    }
+
+    &--active {
+        @include mixin-status($primary);
+    }
+    &--block {
+        @include mixin-status(block);
+    }
+    &--approved {
+        @include mixin-status($success);
+    }
+    &--pending {
+        @include mixin-status($warning);
+    }
+    &--reject {
+        @include mixin-status($danger);
+    }
+}
